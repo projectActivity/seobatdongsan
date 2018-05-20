@@ -1,0 +1,106 @@
+img {
+    width: 100%;
+}
+
+@media all and (min-width: 320px) {
+    .navbar-nav>li>a {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        height: auto;
+        font-size: 15px;
+    }
+
+    .center img {
+        height: 70px;
+    }
+
+    .main-duan .duan-hinhanh  img {
+        height: 270px;
+    }
+
+    .blockcontent .body-text img {
+
+    }
+}
+
+@media all and (min-width: 375px) {
+    .navbar-nav>li>a {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        height: auto;
+        font-size: 15px;
+    }
+
+    .main-duan .duan-hinhanh  img {
+        height: 270px;
+    }
+
+    .site-footer {
+        padding-top: 25px;
+    }
+    #mapgoogle {
+        text-align: center;
+    }
+    .site-footer .site-footer-middle {
+        display: none;
+    }
+}
+
+@media all and (min-width: 425px) {
+    .navbar-nav>li>a {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        height: auto;
+        font-size: 15px;
+    }
+
+    .center img {
+        height: 130px;
+    }
+
+    .main-duan .duan-hinhanh  img {
+        height: 300px;
+    }
+}
+
+@media all and (min-width: 768px) {
+    .main-header {
+        margin-bottom: 50px;
+    }
+
+    .navbar-nav>li>a {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        height: auto;
+        font-size: 16px;
+    }
+    .navbar-header {
+        height: 50px;
+    }
+    .navbar-brand {
+        font-size: 18px;
+    }
+
+    .navbar-nav>li>a {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        height: auto;
+        font-size: 13px;
+    }
+
+    .main-duan .duan-hinhanh  img {
+        height: 325px;
+    }
+
+
+}
+
+@media all and (min-width: 1024px) {
+
+}
+
+@media all and (min-width: 1440px) {
+    img {
+        height: 100%;
+    }
+}

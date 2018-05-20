@@ -1,0 +1,725 @@
+
+img {
+    width: 100%;
+}
+/* Màn hình diện thoại nhỏ nhất */
+@media all and (min-width: 320px) {
+    #duAnTrongTam{
+        font-family: Tahoma;
+    }
+    .carousel-inner .item img {
+        width: 100%;
+        height: 125px; !important;
+    }
+    .carousel-inner {
+        width: 100%;
+        height: 125px;
+    }
+
+    #tinMoi {
+        margin-bottom: 20px;
+    }
+    #tinMoi .block-content {
+        text-align: justify;
+    }
+
+    #tinMoi .block-body {
+        height: auto;
+    }
+
+    .duan-item .duan-item-img img {
+        width: 100% ;
+    }
+
+    #mapgoogle {
+        text-align: center;
+    }
+
+    .navbar-nav>li>a {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        height: auto;
+        font-size: 15px;
+    }
+
+    #text-7 {
+        display: none;
+    }
+
+    .site-footer .site-footer-middle {
+        display: none;
+    }
+
+    /* Begin Dự án trọng tam*/
+    #duAnTrongTam .row .block-hinhanh img {
+        width: 100%;
+    }
+
+    #duAnTrongTam .row .block-tomtat h1{
+        margin-top: 20px;
+    }
+
+    .duan-tieude .tenDuAnTrongTam {
+        color: #e67e22;
+        font-weight: bold;
+    }
+
+    .duan-hinhanh {
+        margin-bottom: 20px;
+    }
+
+    .duan-tomtat {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .duan-hinhanh img {
+        width: 100%;
+        height: 250px;
+    }
+    .duan-dshinhanh .hinhanh img {
+        width: 100%;
+        height: 250px;
+        padding: 10px 5px;
+    }
+
+    #dangKyEmail {
+        margin-top: 0px;
+        background: none;
+        padding:5px 0px;
+        min-height: 0px;
+    }
+    .form-email {
+        margin: 25px 5px;
+        padding: 10px;
+    }
+    .form-email .title {
+        font-size: 24px;
+    }
+    .form-email input[type=text] {
+        height: 40px;
+    }
+
+    /*Dự án */
+    .center img {
+        height: auto;
+    }
+    .block-content ul{
+        padding: 10px;
+    }
+    .main-duan .duan-hinhanh  img {
+        height: 270px;
+    }
+
+}
+
+@media all and (min-width: 375px) {
+
+    #tinDauTrang{
+        font-family: tahoma;
+    }
+    .carousel-inner {
+        width: 100%;
+        height: 150px;
+    }
+    .carousel-inner > .item > img {
+        width: 100%;
+        height: 150px ;
+    }
+
+    .container .center img {
+        vertical-align: middle;
+        width: 100%;
+        height: auto;
+    }
+    .block-content .content-text .content-title{
+        margin-top: 10px;
+        text-align: center;
+    }
+    .block-content .content-text .content-tomtat{
+        text-align: justify;
+    }
+
+    .navbar-nav>li>a {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        height: auto;
+        font-size: 15px;
+    }
+
+    #mapgoogle {
+        text-align: center;
+    }
+
+
+    #tinMoi .block-body{
+        height: auto;
+    }
+
+    #duAnNoiBat {
+        margin-top: 20px;
+    }
+
+    .main-header {
+        margin-bottom: 70px;
+    }
+
+
+
+    .duan-item .duan-item-img img {
+        width: 100%;
+    }
+
+    #dangKyEmail {
+        min-height: 420px;
+        padding: 0;
+        margin-top: 20px;
+        background: none;
+    }
+
+    .site-footer {
+        padding-top: 25px;
+    }
+
+    .form-group {
+        margin-bottom: 0px;
+    }
+
+    .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+        max-height: 445px;
+    }
+
+    .form-email {
+        margin: 30px 0px;
+        background-color: rgba(52, 73, 94,0.6);
+        padding: 10px;
+    }
+
+    .form-email .title {
+        font-size: 22px;
+    }
+
+    .form-email input[type=text] {
+        height: 40px;
+    }
+
+    #text-7 {
+        display: none;
+    }
+
+    .site-footer .site-footer-middle {
+        display: none;
+    }
+
+    /* Begin Dự án trọng tam*/
+    #duAnTrongTam .row .block-hinhanh img {
+        width: 100%;
+    }
+
+    #duAnTrongTam .row .block-tomtat h1{
+        margin-top: 20px;
+    }
+
+    .duan-tieude .tenDuAnTrongTam {
+        color: #e67e22;
+        font-weight: bold;
+    }
+
+    .duan-hinhanh {
+        margin-bottom: 20px;
+    }
+
+    .duan-tomtat {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .duan-hinhanh img {
+        width: 100%;
+        height: 250px;
+    }
+
+    /*.block-tieude .leftImg img {*/
+    /*display: inline-block;*/
+    /*width: 100%;*/
+    /*height: 15px;*/
+    /*}*/
+
+    /*.block-tieude .rightImg img {*/
+    /*width: 100%;*/
+    /*height: 15px;*/
+    /*}*/
+
+    .duan-dshinhanh .hinhanh img {
+        width: 100%;
+        height: 250px;
+        padding: 10px 5px;
+    }
+
+    /*End Dự án trọng tâm*/
+    .main-duan .duan-hinhanh  img {
+        height: 270px;
+    }
+}
+
+@media all and (min-width: 425px) {
+    .box-body{
+        font-family: Tahoma;
+    }
+    .box-body .baiviet-content img{
+        max-width: 100%;
+        height: auto;
+    }
+    .navbar-nav>li>a {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        height: auto;
+        font-size: 15px;
+    }
+
+    #mapgoogle {
+        text-align: center;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    #text-7 {
+        display: none;
+    }
+
+    .site-footer .site-footer-middle {
+        display: none;
+    }
+
+    .carousel-inner {
+        width: 100%;
+        height: 190px;
+    }
+
+    .carousel-inner > .item > img {
+        width: 100%;
+        height: 190px;
+    }
+
+    #duAnNoiBat {
+        margin-top: 20px;
+    }
+
+    #dangKyEmail {
+        margin-top: 30px;
+        background: none;
+        min-height: 400px;
+    }
+
+    .duan-item .duan-item-img img {
+        max-width: 300px;
+    }
+
+    /* Begin Dự án trọng tam*/
+    #duAnTrongTam .row .block-hinhanh img {
+        width: 100%;
+    }
+
+    #duAnTrongTam .row .block-tomtat h1{
+        margin-top: 20px;
+    }
+
+    .duan-tieude .tenDuAnTrongTam {
+        color: #e67e22;
+        font-weight: bold;
+    }
+
+    .duan-hinhanh {
+        margin-bottom: 20px;
+    }
+
+    .duan-tomtat {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .duan-hinhanh img {
+        width: 100%;
+        height: 250px;
+    }
+
+    /*.block-tieude .leftImg img {*/
+    /*display: inline-block;*/
+    /*width: 100%;*/
+    /*height: 15px;*/
+    /*}*/
+
+    /*.block-tieude .rightImg img {*/
+    /*width: 100%;*/
+    /*height: 15px;*/
+    /*}*/
+
+    .duan-dshinhanh .hinhanh img {
+        width: 100%;
+        height: 250px;
+        padding: 10px 5px;
+    }
+
+    /*End Dự án trọng tâm*/
+    .center img {
+        height: 130px;
+    }
+
+    .main-duan .duan-hinhanh  img {
+        height: 300px;
+    }
+}
+
+@media all and (min-width: 768px) {
+    .main-duan img{
+        height: auto;
+    }
+    .main-duan img.devide{
+        width: 250px;
+        height: auto;
+    }
+    #duAnTrongTam .duan-hinhanh img{
+        height: auto;
+    }
+    .navbar-header{
+        height: 50px;
+    }
+    .box-body{
+        font-family: Tahoma;
+    }
+    .box-body .baiviet-content img{
+        max-width: 100%;
+        height: auto;
+    }
+    .navbar-brand {
+        font-size: 20px;
+        padding: 6px 15px;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 7px;
+        padding-right: 5px;
+        height: auto;
+        font-size: 14px;
+    }
+
+    .carousel-inner {
+        width: 100%;
+        height: 270px;
+    }
+    .carousel-inner > .item > img {
+        width: 100%;
+        height: 270px;
+    }
+
+    .duan-item .duan-item-img img {
+        width: 100%;
+        height: 160px;
+    }
+
+    #tinMoi .block-body{
+        height: auto;
+    }
+
+    .slimScrollDiv {
+        height: 220px !important;
+    }
+
+    .slimScrollDiv #slimScrollDiv {
+        height: 220px !important;
+    }
+
+    .block-content .content-text .content-title {
+        text-align: left;
+    }
+
+    .block-content .content-text .content-tomtat {
+        overflow: hidden;
+        height: 80px;
+    }
+
+    #duAn .block .block-body .block-content .content-text .content-title{
+        margin-top: 5px;
+        text-align: center;
+        line-height: 1;
+    }
+
+    .block-content .content-text .content-tomtat{
+        text-align: justify;
+    }
+
+    #duAnNoiBat {
+        margin-top: 20px;
+    }
+
+    #duAnTrongTam {
+        margin-top: 55px;
+    }
+
+    #duAnNoiBat .block{
+        height: 282px !important;
+    }
+
+    #duAnNoiBat .block .block-body{
+        overflow: hidden;
+        width: auto;
+        height: 282px ;
+    }
+    .main-header {
+        margin-bottom: 50px;
+    }
+
+    .form-email {
+        margin: 0px;
+        padding: 20px;
+    }
+
+    .form-email .title {
+        font-size: 25px;
+    }
+
+    #dangKyEmail {
+        padding: 0px;
+    }
+
+    .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+        max-height: 450px;
+    }
+
+    .container .center img {
+        width: 100%;
+        height: 140px;
+    }
+
+
+
+    #text-7 {
+        display: none;
+    }
+
+    .site-footer .site-footer-middle {
+        display: none;
+    }
+
+    iframe {
+        width: 100%;
+        height: 200px;
+    }
+
+    .main-duan .duan-hinhanh  img {
+        height: 325px;
+    }
+
+    .duan-dshinhanh .hinhanh img {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+@media all and (min-width: 1024px) {
+    /*.navbar-right{*/
+        /*margin-left:150px;*/
+    /*}*/
+    .main-duan img{
+        height: auto;
+    }
+    .main-duan .duan-hinhanh  img{
+        height: auto;
+    }
+    #duAnTrongTam{
+        margin-top: 0px;
+    }
+    #duAnNoiBat .block-body .duan-item{
+        padding: 3px;
+        margin: 0px;
+    }
+    #duAnNoiBat .block-content .duan-item{
+        margin: 0px;
+    }
+    .slimScrollDiv {
+        height: 404px !important;
+    }
+    .navbar-header{
+        height: 70px;
+    }
+    .navbar-brand {
+        font-size: 25px;
+        padding: 15px 15px;
+    }
+    .navbar-nav>li>a {
+        padding-top: 17px;
+        padding-bottom: 17px;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: auto;
+        font-size: 17px;
+    }
+    .carousel-inner {
+        width: 100%;
+        height: 350px;
+    }
+
+    .center img {
+        height: auto;
+    }
+
+    .main-header {
+        margin-bottom: 70px;
+    }
+
+    .carousel-inner .item img {
+        width: 940px;
+        height: 530px;
+    }
+
+    .form-email {
+        margin: 0;
+        padding: 25px;
+    }
+
+    .form-email .title {
+        font-size: 27px;
+    }
+
+    .block-content {
+        margin: 25px 5px;
+    }
+
+    .block-content ul {
+        padding: 5px;
+    }
+
+    #tinmoi {
+        width: 180px;
+        height: 110px;
+    }
+    #duAnNoiBat .block .block-body {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        height: 404px !important;
+        overflow: auto;
+    }
+
+    #duAnNoiBat {
+        margin-top: 0px;
+        padding:0px;
+    }
+
+    #duAnNoiBat .block-body {
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .duan-item .duan-item-img img {
+        width: 100%;
+        height: 100px;
+        max-width: 145px;
+    }
+
+    #tinMoi .block-body {
+        height: auto;
+    }
+
+    .block-content .content-text .content-title {
+        font-size: 15px;
+    }
+
+    #duannoibat {
+        width: 100px;
+        height:80px;
+    }
+
+    .duan-dshinhanh .hinhanh img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .duan-hinhanh img {
+        width: 100%;
+    }
+
+    .duan-hinhanh {
+        margin-bottom: 20px;
+    }
+
+    .duan-tomtat {
+        font-size: 17px;
+        text-align: justify;
+    }
+}
+
+@media all and (min-width: 1440px) {
+    .slimScrollDiv {
+        height: 385px !important;
+    }
+    #duAnNoiBat .block .block-body {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        height: 385px !important;
+        overflow: auto;
+    }
+    .navbar-right{
+        margin-left:150px;
+    }
+    .duan-item .duan-item-name {
+        color: #055699;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 10px 0px 15px;
+    }
+    .carousel-inner .item img{
+        width: 100%;
+    }
+    .navbar-nav>li>a {
+        padding-top: 17px;
+        padding-bottom: 17px;
+        padding-left: 15px;
+        padding-right: 15px;
+        height: auto;
+        font-size: 17px;
+    }
+    .main-header {
+        margin-bottom: 70px;
+    }
+
+    .carousel-inner {
+        width: 100%;
+        height: 350px;
+    }
+
+    .content-wrapper {
+        margin-top: 70px;
+    }
+
+    #tinmoi {
+        width: 180px;
+        height: 125px;
+    }
+
+    #duannoibat {
+        width: 150px;
+        height:100px;
+    }
+
+    #text-7 {
+        display: none;
+    }
+
+    .container .center img {
+        width: auto;
+        height: 100px;
+    }
+
+    iframe {
+        width: 100%;
+        height: 190px;
+    }
+
+    .logo-partner div {
+        margin: 10px;
+        padding: 10px;
+    }
+}

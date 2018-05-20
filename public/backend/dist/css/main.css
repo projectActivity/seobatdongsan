@@ -1,0 +1,432 @@
+
+.main-header {
+	margin-bottom: 70px;
+}
+
+.center{
+	text-align: center;
+}
+
+.background-none
+{
+	background-color: transparent !important;
+}
+
+.padding-10
+{
+	padding: 10px;
+}
+
+.margin-10
+{
+	margin: 10px;
+}
+.nomargin{
+	margin: 0px !important;
+}
+.nopadding
+{
+	padding: 0px !important;
+}
+.width-30{
+	width: 30px;
+}
+.note-error {
+    padding: 0 1px;
+    font-size: 11px;
+    line-height: 15px;
+    height: 15px;
+}
+
+.mes-note-error {
+    display: none;
+    color: #e08374 !important;
+}
+.red{
+	color: red;
+}
+.requireTxt{
+	color: red;
+	font-weight: bold;
+}
+.contactDiv
+{
+	font-family: Tahoma;
+	color: white;
+	font-size: 16px;
+	height: 70px;
+}
+.contactDiv  a{
+	color: white !important;
+	margin-left: 5px;
+	font-weight: normal;
+}
+.contactDiv i{
+	font-weight: bold;
+}
+.contactDiv .itemContact
+{
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 4;
+	margin-left: 20px;
+}
+.carousel-inner .item img{
+	width: 100%;
+}
+.carousel-inner{
+	height: 300px;
+}
+
+.site-footer {
+	background-color: #2a2b34;
+	color: #888e98;
+	font-size: 13px;
+	padding-top: 70px;
+}
+.site-footer .widget {
+	margin-bottom: 40px;
+}
+.site-footer .widget-title {
+	text-transform: uppercase;
+	font-size: 16px;
+	color: #fff;
+	font-family: inherit;
+	font-weight: bold;
+	border-bottom: 1px solid #bfa733;
+	display: inline-block;
+	padding-bottom: 15px;
+	margin-bottom: 25px;
+	padding-top: 10px;
+}
+.site-footer ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.site-footer ul li {
+	padding: 5px 0;
+}
+.site-footer .site-footer-middle {
+	padding: 30px 0 0;
+	background-color: #fff;
+}
+.site-footer a {
+	color: #888e98;
+}
+.site-footer .site-footer-middle {
+	border-top: 1px solid #444b57;
+	padding: 30px 0;
+}
+
+
+.site-footer .site-footer-middle > .container:first-child {
+	padding-bottom: 20px;
+}
+.site-footer .site-footer-middle .widget {
+	margin-bottom: 0;
+}
+.logo-partner {
+	text-align: center;
+}
+.logo-partner img {
+	display: block;
+	height: 60px;
+	width: auto;
+}
+.logo-partner div {
+	display: inline-block;
+	padding: 0 50px;
+}
+.site-footer .site-info {
+	background-color: #161618;
+	padding: 12px 0;
+	text-align: center;
+}
+.site-footer .widget {
+	margin-bottom: 40px;
+}
+
+.navbar-static-top{
+	height: 70px ;
+}
+.box-body{
+	font-family: Tahoma;
+}
+.box-body .baiviet-content img{
+	max-width: 100%;
+	height: auto;
+}
+.navbar-brand {
+	font-size: 30px;
+	line-height: 30px;
+}
+.navbar-header
+{
+	height:70px;
+	font-family: Tahoma;
+}
+.navbar-nav>li>a {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	height: 70px;
+	font-size: 17px;
+	line-height: 2;
+}
+.navbar-form{
+	margin-top: 15px;
+}
+.block{
+	width: 100%;
+}
+.block-header{
+	margin-bottom: 5px;
+}
+.block-header .block-title{
+	background: #055699;
+	padding: 5px 25px;
+	color: white;
+	font-size: 15px;
+	border-top-left-radius: 10px;
+
+}
+#tinDauTrang{
+	margin-top: 30px;
+}
+.block .block-body
+{
+	border:1px solid #055699;
+	padding: 10px 5px;
+}
+.content-img img
+{
+	max-width: 200px;
+}
+.block .block-body .content-text
+ {
+
+ }
+.block .block-body .content-text .block-title
+{
+
+}
+
+
+.block-content .content-text .content-title
+{
+	font-size: 18px;
+	color: #055699;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.block-content ul
+{
+	margin: 10px 0px;
+}
+.block-content ul li
+{
+	list-style: none;
+	margin: 10px 0px;
+	color: #055699;
+	font-weight: bold;
+}
+
+
+.block-content ul li i
+{
+	margin-right: 10px;
+}
+
+.duan-item{
+	/*padding: 10px;*/
+	margin-bottom: 20px;
+}
+
+.duan-item .duan-item-img
+{
+	text-align: center;
+}
+
+.duan-item .duan-item-name
+{
+	color: #055699;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+#tinMoi .block-body{
+	height: 350px;
+}
+#duAnNoiBat .block-body
+{
+	height: 350px;
+	overflow-y: scroll;
+	padding-top: 20px;
+}
+
+#dangKyEmail{
+	margin-top: 50px;
+	background-image: url("/upload/technical_support_services.jpg");
+	background-repeat: no-repeat;
+	min-height: 600px;
+	padding: 50px 100px;
+}
+.form-email
+{
+	margin: 50px 50px;
+	background-color: rgba(52, 73, 94,0.6);
+	padding:100px;
+}
+.form-email .title
+{
+	font-size: 40px;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+}
+
+.form-email label
+{
+	font-size: 20px;
+	color: white;
+	font-weight: bold;
+}
+.form-email input[type=text]{
+	background-color: transparent;
+	font-size: 25px;
+	padding: 10px;
+	height: 50px;
+	color: rgba(236, 240, 241,1.0);
+}
+.mainbox{
+	margin-top: 30px;
+	font-family: tahoma;
+}
+.box-body .baiviet-title{
+	color:#055699;
+	font-size: 25px;
+	font-weight: bold;
+	font-family: Tahoma;
+}
+.baiviet-time
+{
+	margin: 10px 0px;
+	color: rgba(189, 195, 199,1.0);
+	font-style: italic;
+}
+.baiviet-chude{
+	margin: 10px 0px;
+	font-size: 18px;
+	font-family: Tahoma;
+}
+.baiviet-chude span{
+	font-weight: bold;
+}
+.baiviet-content{
+	text-align: justify;
+	line-height: 1.5;
+	font-size: 17px;
+}
+.container-common {
+	clear: both;
+	display: inline-block;
+	width: 100%;
+    margin-bottom:50px;
+}
+
+.container-common .box-header {
+	background: none repeat scroll 0 0 #055699;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	width: 100%;
+	height: 30px;
+}
+.name_tit {
+	font-weight: bold;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 13px;
+	cursor: default;
+	font-family: Tahoma;
+}
+.name_tit h2{
+	font-family: Tahoma;
+	font-size: 12px;
+	margin: 0;
+	text-decoration: none;
+}
+
+.container-common .bor_box {
+	border: solid 1px #999;
+	border-left: 1px solid #999;
+	border-right: 1px solid #999;
+	border-bottom: 1px solid #999;
+	padding-bottom: 4px;
+}
+.container-common .bor_box .list{
+	padding: 10px;
+}
+
+.container-common .bor_box .list ul{
+	padding: 0px;
+}
+.container-common .bor_box .list ul li{
+	color: #055699;;
+	list-style: none;
+	margin: 5px 0px;
+}
+.container-common .bor_box .list ul li i{
+	 margin-right:5px;
+ }
+
+.main-duan{
+
+}
+
+.main-duan .duan-title
+{
+	font-family: Tahoma;
+	font-weight: bold;
+	color:rgba(211, 84, 0,1.0) ;
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+.main-duan .duan-hinhanh{
+	margin-top: 20px;
+}
+.main-duan .duan-hinhanh img{
+	width: 100%;
+	height: 800px;
+}
+
+.main-duan .blockcontent-header
+{
+	height: 80px;
+	margin-top: 5px;
+	background-color: #f39c12;
+}
+.main-duan .blockcontent-header h1
+{
+	font-weight: bold;
+	color: white;
+}
+.main-duan .blockcontent .body-img img{
+    width: 100%;
+}
+.main-duan  .blockcontent .body-text
+{
+	font-family: tahoma;
+	line-height: 1.5;
+	font-size: 16px;
+	text-align: justify;
+    padding: 10px 25px;
+}
+
+#duAnTrongTam {
+	margin-top: 20px;
+}
+
+.duan-tieude .tenDuAnTrongTam {
+	color: #e67e22;
+	font-weight: bold;
+}
