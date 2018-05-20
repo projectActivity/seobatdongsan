@@ -20,7 +20,7 @@ class AlbumEloquentRepository extends EloquentRepository implements AlbumReposit
 	 * Get all album
 	 * @return mixed
 	 */
-	public function getAll($id = null, $mota = null, $created_at = null, $updated_at = null)
+	public function getAll($id = null, $mota = null)
 	{
 		$query = $this->_model->select('id', 'hinhanh', 'mota', 'created_at', 'updated_at');
 		if ($id) {
@@ -29,12 +29,10 @@ class AlbumEloquentRepository extends EloquentRepository implements AlbumReposit
 		if ($mota) {
 			$query->orderBy('mota', 'asc');
 		}
-		if ($created_at) {
-			$query->orderBy('created_at', 'desc');
-		}
-		if ($updated_at) {
-			$query->orderBy('updated_at', 'desc');
-		}
+		
+		$query->orderBy('created_at', 'desc');
+		$query->orderBy('updated_at', 'desc');
+		
 		return $query->get();
 	}
 }

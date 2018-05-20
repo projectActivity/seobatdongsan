@@ -12,5 +12,5 @@ interface AlbumRepositoryInterface
 	 * @param  $updated_at bool
 	 * @return mixed
 	 */
-	public function getAll($id = null, $mota = null, $created_at = null, $updated_at = null);
+	public function getAll($id = null, $mota = null);
 }

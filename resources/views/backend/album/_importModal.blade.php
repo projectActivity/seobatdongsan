@@ -14,7 +14,7 @@
                     <div class="col-md-12">
                         <div class="form-group">
                             <label>Hình ảnh</label> <span class="requireTxt">(*)</span>
-                            <input name="duongdan" type="file" class="form-control required" required>
+                            <input name="hinhanh" type="file" class="form-control required" required>
                             <div class="note-error">
                                 <span class="error mes-note-error"></span>
                             </div>

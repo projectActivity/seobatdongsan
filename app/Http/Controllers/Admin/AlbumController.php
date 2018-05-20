@@ -10,6 +10,7 @@ use App\Model\Album;
 use Illuminate\Support\Facades\DB;
 use Mockery\Exception;
 
+use App\Http\Requests\Album\UpdateAlbumRequest;
 use App\Repositories\Album\AlbumRepositoryInterface;
 
 class AlbumController extends Controller
@@ -24,11 +25,6 @@ class AlbumController extends Controller
         $this->albumRepository = $albumRepository;
     }
 
-    private function pathImage()
-    {
-
-    }
-
     public function Reload()
     {
         $dsalbum = $this->albumRepository->getAll();
@@ -37,7 +33,7 @@ class AlbumController extends Controller
 
     public function Index()
     {
-        $dsalbum = json_encode($this->albumRepository->getAll(false, true));
+        $dsalbum = json_encode($this->albumRepository->getAll(true));
         return view('backend/album/danhsach', compact('dsalbum'));
     }
 
@@ -53,9 +49,9 @@ class AlbumController extends Controller
         {
             $album = new Album;
             $mota = $request->input('mota');
-            if($request->hasFile('duongdan'))
+            if($request->hasFile('hinhanh'))
             {
-                $file = $request->file('duongdan');
+                $file = $request->file('hinhanh');
                 $duoi = $file->getClientOriginalExtension();
                 $name = chop($file->getClientOriginalName(),('.'.$duoi));
                 if ($duoi != 'jpg' && $duoi != 'png' && $duoi != 'jpeg')
@@ -91,7 +87,7 @@ class AlbumController extends Controller
     {
         $mss = new Message(true, 'Thêm mới thành công');
 
-            $url = $request->get('duongdan');
+            $url = $request->get('hinhanh');
             $mota = $request->get('mota');
             $extension = pathinfo($url, PATHINFO_EXTENSION);
 
@@ -129,22 +125,26 @@ class AlbumController extends Controller
         return view('backend/album/_editModal', compact('album'));
     }
 
-    public function Update(Request $request)
+    public function Update(UpdateAlbumRequest $request)
     {
         $mss = new Message(true, 'Cập nhật thành công');
-        if ($request->ajax())
-        {
-            $album = Album::find($request->get('id'));
-            $album->mota = $request->get('mota');
-            try {
-            $album->save();
-            }
-            catch (Exception $e)
-            {
-                $mss->status = false;
-                $mss->message = "Lỗi. Cập nhật thất bại";
-            }
+        
+        DB::beginTransaction();
+        try {
+            // $album = $this->albumRepository->find($id);
+            // $album->mota = $request->get('mota');
+            // $album->save();
+            $data = $request->all();
+            $this->albumRepository->update($data['id'], $data);
         }
+        catch (Exception $e)
+        {
+            $mss->status = false;
+            $mss->message = $e; //"Lỗi. Cập nhật thất bại";
+            DB::rollback();
+            return response(json_encode($mss));
+        }
+        DB::commit();
         return response(json_encode($mss));
     }
 
