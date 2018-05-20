@@ -59,7 +59,7 @@ abstract class EloquentRepository implements RepositoryInterface {
 	 */
 	public function create(array $attributes)
 	{
-		return $this->_model->created($atributes);
+		return $this->_model->create($atributes);
 	}
 
 	/**
@@ -70,9 +70,10 @@ abstract class EloquentRepository implements RepositoryInterface {
 	 */
 	public function update($id, array $attributes)
 	{
-		$retult = $this->find($id);
+		$result = $this->_model->find($id);
 		if ($result) {
-			$result->update($atributes);
+			unset($attributes['id']);
+			$result->update($attributes);
 			return $result;
 		}
 		return false;
@@ -85,7 +86,7 @@ abstract class EloquentRepository implements RepositoryInterface {
 	 */
 	public function delete($id)
 	{
-		$result = $this->find($id);
+		$result = $this->_model->find($id);
 		if ($result) {
 			$result->delete();
 			return true;

@@ -8,6 +8,13 @@ class Album extends Model
 {
     protected $table = "Album";
 
+    protected $fillable = [
+    	'hinhanh',
+    	'mota',
+    	'created_at',
+    	'updated_at'
+    ];
+
     public function delete()
     {
         if(file_exists('upload/hinhanh/'.$this->hinhanh)){

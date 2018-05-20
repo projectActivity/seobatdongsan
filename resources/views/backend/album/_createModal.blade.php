@@ -14,7 +14,7 @@
                     <div class="col-md-12">
                         <div class="form-group">
                             <label>Url</label> <span class="requireTxt">(*)</span>
-                            <input name="duongdan" type="text" class="form-control required" placeholder="Đường dẫn" required>
+                            <input name="hinhanh" type="text" class="form-control required" placeholder="Đường dẫn" required>
                             <div class="note-error">
                                 <span class="error mes-note-error"></span>
                             </div>
