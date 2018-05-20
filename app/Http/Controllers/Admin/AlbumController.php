@@ -10,17 +10,34 @@ use App\Model\Album;
 use Illuminate\Support\Facades\DB;
 use Mockery\Exception;
 
+use App\Repositories\Album\AlbumRepositoryInterface;
+
 class AlbumController extends Controller
 {
+    /**
+     * @var 
+     */
+    protected $albumRepository;
+
+    public function __construct(AlbumRepositoryInterface $albumRepository)
+    {
+        $this->albumRepository = $albumRepository;
+    }
+
+    private function pathImage()
+    {
+
+    }
+
     public function Reload()
     {
-        $dsalbum = Album::orderBy('id', 'desc')->get();
+        $dsalbum = $this->albumRepository->getAll();
         return response(json_encode($dsalbum));
     }
 
     public function Index()
     {
-        $dsalbum = json_encode(Album::orderBy('id', 'desc')->get());
+        $dsalbum = json_encode($this->albumRepository->getAll(false, true));
         return view('backend/album/danhsach', compact('dsalbum'));
     }
 
@@ -102,13 +119,13 @@ class AlbumController extends Controller
 
     public function Show($id)
     {
-        $album = Album::findOrFail($id);
+        $album = $this->albumRepository->find($id);
         return view('backend/album/_viewModal', compact('album'));
     }
 
     public function Edit($id)
     {
-        $album = Album::findOrFail($id);
+        $album = $this->albumRepository->find($id);
         return view('backend/album/_editModal', compact('album'));
     }
 
